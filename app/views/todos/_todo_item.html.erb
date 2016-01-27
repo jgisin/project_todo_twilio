@@ -5,7 +5,9 @@
     <% end %>
   </td>
 
-  <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModalEdit">Edit</button></td>
+  <td>
+    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModalEdit-<%= todo.id %>">Edit</button>
+  </td>
 
   <td>
     <%= form_for todo, :url=> "/texts", :html => {:method => :post} do |f| %>
